@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Charusat Campus Drive</string>
+    <array name="genres">
+        <item>Rock</item>
+        <item>folk</item>
+        <item>pop</item>
+    </array>
+</resources>

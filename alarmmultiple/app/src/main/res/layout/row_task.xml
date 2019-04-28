@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp" >
+    
+    <!-- Completed Checkbox -->
+    
+    <CheckBox 
+        android:id="@+id/checkbox_row_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:focusable="false" />
+    
+    <!-- Priority Image -->
+    <ImageView
+    	android:id="@+id/image_row_priority"
+    	android:layout_width="24dp"
+    	android:layout_height="24dp"
+    	android:layout_toRightOf="@id/checkbox_row_complete"
+    	android:layout_centerVertical="true"
+    	android:layout_marginRight="4dp"
+    	android:contentDescription="@string/image_priority" />
+    
+    <!-- Category View (solid color) -->
+    <View
+        android:id="@+id/view_row_category"
+        android:layout_width="8dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="4dp" />
+    
+    <!-- Task Due Date -->
+    <TextView
+        android:id="@+id/text_row_due_date"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_toLeftOf="@id/view_row_category"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textSize="10sp"
+        android:maxLines="2" />
+    
+    <!-- Task Name -->
+    <TextView
+        android:id="@+id/text_row_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/image_row_priority"
+        android:layout_toLeftOf="@id/text_row_due_date"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+</RelativeLayout>

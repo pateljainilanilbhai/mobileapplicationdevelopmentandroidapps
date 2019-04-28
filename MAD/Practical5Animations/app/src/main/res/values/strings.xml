@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Practical 5 Animations</string>
+    <string-array name="Animation">
+        <item>Aplha</item>
+        <item>Rotate</item>
+        <item>Scale</item>
+        <item>Spin</item>
+        <item>Translate</item>
+    </string-array>
+</resources>

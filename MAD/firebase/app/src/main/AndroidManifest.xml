@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jainil.firebase">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICEi" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewingData" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".viewcompanyname" />
+        <activity android:name=".Teacheroptions" />
+        <activity android:name=".viewinguserenrol" />
+        <activity android:name=".viewround1resultlist" />
+        <activity android:name=".viewround2resultlist" />
+        <activity android:name=".viewround3resultlist" />
+        <activity android:name=".Viewenrolled" />
+        <activity android:name=".seecompany" />
+        <activity android:name=".qrcode" />
+        <activity android:name=".seeenrolledcompany" />
+        <activity android:name=".viewround1attendancelist" />
+        <activity android:name=".viewround2attendancelist" />
+        <activity android:name=".viewround3attendancelist" />
+
+        <service android:name=".MyfirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".backgroundresult"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".backgroundresult2"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".backgroundresult3"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

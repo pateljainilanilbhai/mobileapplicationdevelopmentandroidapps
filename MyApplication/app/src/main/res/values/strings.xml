@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string-array name="country">
+        <item>India</item>
+        <item>China</item>
+        <item>US</item>
+        <item>UN</item>
+    </string-array>
+</resources>
